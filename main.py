@@ -3,6 +3,8 @@ import asyncio
 import logging
 import sys
 
+import typing
+
 import chatstack
 
 
@@ -18,8 +20,6 @@ def main():
     body = yield from response.read()
 
     print(body)
-
-    return asyncio.Future()
 
 
 if __name__ == '__main__':
